@@ -16,11 +16,11 @@ struct dretva {
 	int rasp; //način raspoređivanja (za opcionalni zadatak)
 };
 
-#define MAX_DRETVI	7
+define MAX_DRETVI	7
 struct dretva *P[MAX_DRETVI]; //red pripravnih dretvi, P[0] = aktivna dretva
 
 /* podaci o događajima pojave novih poslova - dretvi */
-#define DRETVI	6
+define DRETVI	6
 int nove[DRETVI][5] =
 {
 	/* trenutak dolaska, id, p, prio, rasp (prio i rasp se koriste ovisno o rasporedivacu) */
