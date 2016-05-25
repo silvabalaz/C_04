@@ -5,9 +5,14 @@ Simulirati raspoređivanje dretvi prema prioritetu kao osnovnom kriteriju te FIF
 
 Načini raspoređivanja SCHED_FIFO i SCHED_RR odgovaraju navedenom opisu (raspoređivač može raditi s dretvama oba tipa istovremeno u sustavu).
 
+
+
 Prijedlog strukture podataka te primjer ispisa
 
+
+
 int t; //simulacija vremena (trenutno vrijeme)
+
 
 struct dretva {
 	int id; //1, 2, 3, ...
@@ -17,10 +22,13 @@ struct dretva {
 };
 
 define MAX_DRETVI	7
+
 struct dretva *P[MAX_DRETVI]; //red pripravnih dretvi, P[0] = aktivna dretva
+
 
 /* podaci o događajima pojave novih poslova - dretvi */
 define DRETVI	6
+
 int nove[DRETVI][5] =
 {
 	/* trenutak dolaska, id, p, prio, rasp (prio i rasp se koriste ovisno o rasporedivacu) */
@@ -31,6 +39,7 @@ int nove[DRETVI][5] =
 	{ 20, 6, 3, 6, 1 },
 	{ 20, 7, 4, 7, 1 },
 };
+
 
 void ispis_stanja ( int ispisi_zaglavlje )
 {
