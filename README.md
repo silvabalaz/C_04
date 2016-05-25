@@ -25,8 +25,6 @@ define MAX_DRETVI	7
 
 struct dretva *P[MAX_DRETVI]; //red pripravnih dretvi, P[0] = aktivna dretva
 
-
-/* podaci o događajima pojave novih poslova - dretvi */
 define DRETVI	6
 
 int nove[DRETVI][5] =
