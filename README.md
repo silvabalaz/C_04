@@ -1,5 +1,5 @@
 # C_04
-Simulacija raspoređivanja dretvi
+Simulacija raspoređivanja dretvi (Operacijski sustavi kolegij)
 
 Simulirati raspoređivanje dretvi prema prioritetu kao osnovnom kriteriju te FIFO ili RR kao dodatnom (kada prvi kriterij nije dostatan). Svaka dretva ima zadan i prioritet i način raspoređivanja (FIFO ili RR). Ako je aktivna dretva tipa RR, onda će nakon jednog koraka (kvanta/sekunde) biti vraćena u red pripravnih, iza dretvi istog prioriteta, ali ispred onih manjeg prioriteta. Ako je dretva tipa FIFO onda će ona raditi do završetka ili do pojave prioritetnije dretve.
 
